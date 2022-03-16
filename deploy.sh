@@ -11,4 +11,5 @@ npm install
 echo $PRIVATE_KEY > privatekey.pem
 echo $SERVER > server.crt
 # Start with pm2
+pwd
 pm2 start ./bin/www --name example_app
