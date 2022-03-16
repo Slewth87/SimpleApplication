@@ -5,11 +5,12 @@ sudo npm install -g pm2
 # Stop any instance of our application currently running
 pm2 stop simpleapp
 # Change Directory into folder where application is downloaded
+pwd
 cd SimpleApplication
+pwd
 # Install dependencies
 npm install
 echo $PRIVATE_KEY > privatekey.pem
 echo $SERVER > server.crt
 # Start with pm2
-pwd
 pm2 start ./bin/www --name simpleapp
